@@ -10,11 +10,11 @@ namespace ThunderNetworks.Models
     {
         public BitcoinScriptAddress BitcoinAddress { get; set; }
 
-        public List<BitcoinSecret> Wifs { get; set; }
+        public List<BitcoinSecret> PrivateKeys { get; set; }
 
         public MultiSigAddress()
         {
-            Wifs = new List<BitcoinSecret>();
+            PrivateKeys = new List<BitcoinSecret>();
         }
     }
 }

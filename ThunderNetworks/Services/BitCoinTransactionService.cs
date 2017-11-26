@@ -38,7 +38,7 @@ namespace ThunderNetworks.Services
 
             foreach (var coin in receivedCoins)
             {
-                if (coin.TxOut.ScriptPubKey == _bitCoinSession.Wif.ScriptPubKey)
+                if (coin.TxOut.ScriptPubKey == _bitCoinSession.PrivateKey.ScriptPubKey)
                 {
                     outPointToSpend = coin.Outpoint;
                 }

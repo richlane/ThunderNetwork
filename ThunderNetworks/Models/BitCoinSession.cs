@@ -11,7 +11,7 @@ namespace ThunderNetworks.Models
     {
         public Network BitCoinNetwork { get; set; }
 
-        public BitcoinSecret Wif { get; set; }
+        public BitcoinSecret PrivateKey { get; set; }
 
         public BitcoinPubKeyAddress Address { get; set; }
 
@@ -23,10 +23,10 @@ namespace ThunderNetworks.Models
 
         private void getPrivateKeyAndAddress()
         {
-            Wif = new BitcoinSecret("cSrSUDPKdEBZh9x2MeVaCu6Ce5xiFApU7sQuiS4mLUECJ5xqVqzi");
-            Address = Wif.GetAddress();
+            PrivateKey = new BitcoinSecret("cSrSUDPKdEBZh9x2MeVaCu6Ce5xiFApU7sQuiS4mLUECJ5xqVqzi");
+            Address = PrivateKey.GetAddress();
 
-            Console.WriteLine($"Key: {Wif}"); //  cSrSUDPKdEBZh9x2MeVaCu6Ce5xiFApU7sQuiS4mLUECJ5xqVqzi
+            Console.WriteLine($"Key: {PrivateKey}"); //  cSrSUDPKdEBZh9x2MeVaCu6Ce5xiFApU7sQuiS4mLUECJ5xqVqzi
             Console.WriteLine($"Address: {Address}"); // n15TeiYwV65SQjaZnVc1E2g79pVjgSDCQV
                                                        
         }
@@ -35,10 +35,10 @@ namespace ThunderNetworks.Models
         private void generateNewPrivateKeyAndAddress()
         {
             Key privateKey = new Key();
-            Wif = privateKey.GetWif(BitCoinNetwork);
-            Address = Wif.GetAddress();
+            PrivateKey = privateKey.GetWif(BitCoinNetwork);
+            Address = PrivateKey.GetAddress();
 
-            Console.WriteLine(Wif);
+            Console.WriteLine(PrivateKey);
             Console.WriteLine(Address);
         }
 
