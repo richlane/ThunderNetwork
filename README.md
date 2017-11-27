@@ -12,5 +12,7 @@ https://www.blocktrail.com/tBTC/tx/8e7706e9254da7ac95f29c6080083256bb2d83d72e1f1
 https://github.com/MetacoSA/NBitcoin
 https://programmingblockchain.gitbooks.io/programmingblockchain/content/
 
+5. Here is a Youtube video describing how Bitcoin Core works w/Mutisig addresses.
+
 
 
