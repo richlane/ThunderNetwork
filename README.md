@@ -15,5 +15,8 @@ https://programmingblockchain.gitbooks.io/programmingblockchain/content/
 5. Here is a Youtube video describing how Bitcoin Core works w/Mutisig addresses. Not for the faint of heart!
 https://www.youtube.com/watch?v=YN2Vyu9RupU
 
+6. Good Nbitcoin tutorial
+https://www.codeproject.com/Articles/835098/NBitcoin-Build-Them-All
+
 
 
